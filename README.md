@@ -2,10 +2,7 @@
 
 This repository is used to document guidelines and relevant matetials on how to learn c and cpp programming.
 
-Below is a concise guideline on how to program with cpp. *[Reference](https://github.com/ufoym/cpp-core-guidelines-cheatsheet)*
-
-<img src="./imgs/philosophy.png" width="50%">
-
+[Here]((https://github.com/ufoym/cpp-core-guidelines-cheatsheet)) is a concise guideline on how to program with cpp.
 
 ## IDE config
 
@@ -18,3 +15,5 @@ The relevant configuration documentation can be found [here](./docs/config/vscod
 ## Reference
 
 - [cpp-core-guidelines-cheatsheet](https://github.com/ufoym/cpp-core-guidelines-cheatsheet)
+
+- [Essential C++](https://www.informit.com/store/essential-c-plus-plus-9780201485189)
