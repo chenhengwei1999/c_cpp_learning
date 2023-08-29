@@ -1,10 +1,10 @@
-# Chapter 1
+# Chapter 1 - Basic C++ Programming
 
 ## 1.1 How to Write a C++ Program
 
 ### Knowledge Introduction
 
-*Needs to be replenished.*
+More details can be found [here](../docs/1.1.md).
 
 ### Sample Code
 
@@ -17,7 +17,7 @@ g++ how_to_write.cpp -o how_to_write
 
 ### Knowledge Introduction
 
-*Needs to be replenished.*
+More details can be found [here](../docs/1.2.md).
 
 ### Sample Code
 
