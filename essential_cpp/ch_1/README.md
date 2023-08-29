@@ -26,3 +26,16 @@ g++ cpp_object.cpp -o cpp_object
 ./cpp_object
 ```
 
+## 1.3 Writing Expression
+
+### Knowledge Introduction
+
+More details can be found [here](../docs/1.3.md).
+
+### Sample Code
+
+```bash
+g++ writing_expression.cpp -o writing_expression
+./writing_expression
+```
+

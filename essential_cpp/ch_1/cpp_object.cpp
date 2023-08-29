@@ -12,7 +12,7 @@ int main()
 
    int usr_answer;
 
-   int num_tries = 1;
+   int num_tries = 0;
    int num_right = 0;
    /*
    Optionally, you can use 
@@ -38,12 +38,12 @@ int main()
 
    while (flag)
    {
+    num_tries += 1;
     cout << "This is your "
          << num_tries
          << " try. Just Go It!"
          << "\n";
-    num_tries += 1;
-
+    
     /*
     Give the Fibonacci sequence to usr
     */
@@ -57,14 +57,15 @@ int main()
     if (usr_answer == system_right)
     {
         num_right += 1;
-        usr_score = num_right / num_tries + num_right % num_tries;
+        usr_score = static_cast<float>(num_right) / num_tries;
         cout << "Your answer is right! Want to try again? Y/N ";
         cin >> usr_more;
         if (usr_more == "Y")
         {
             cout << "Your score is "
                  << usr_score
-                 << ". Please go on it!\n";
+                 << ". Please go on it!\n"
+                 << "\n";
             int system_right_tmp = system_right;
             system_right = system_right + fib_second;
             fib_first = fib_second;
@@ -76,7 +77,11 @@ int main()
 
             continue;
         }
-        else
+        /*
+        If user input the other value, not "Y/N",
+        then, It will show a bug. Needs to catch this type of exception.
+        */ 
+        else if (usr_more == "N")
         {
             flag = false;
             cout << "Your score is "
@@ -84,17 +89,22 @@ int main()
                  << ". See you next time!\n";
             continue;
         }
+        else 
+        {
+        throw std::runtime_error("Invalid input. Expected 'Y' or 'N'.");
+        }
     }
     else
     {
-        usr_score = num_right / num_tries + num_right % num_tries;
+        usr_score = static_cast<float>(num_right) / num_tries;
         cout << "Answer is false. Want to try again? Y/N ";
         cin >> usr_more;
         if (usr_more == "Y")
         {
             cout << "Your score is "
                  << usr_score
-                 << ". Please try again!\n";
+                 << ". Please try again!\n"
+                 << "\n";
             continue;
         }
         else
