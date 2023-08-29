@@ -2,7 +2,7 @@
 
 This repository is used to document guidelines and relevant matetials on how to learn c and cpp programming.
 
-[Here]((https://github.com/ufoym/cpp-core-guidelines-cheatsheet)) is a concise guideline on how to program with cpp.
+[Here](./imgs/philosophy.png) is a concise guideline on how to program with cpp.
 
 ## IDE config
 
